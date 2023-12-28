@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8e9ecc4;
+  padding: 20px 80px;
+  height: 15vh;
+  z-index: 1;
+}
+
+nav.active {
+  /* Styles for the fixed navbar after scrolling down */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Add other styles as needed */
+}
+
+nav.mobile-active {
+  background-color: #c2d7f3; /* Change this to your desired background color */
+  height: 100vh; /* Adjust the height as needed */
+  overflow-y: auto; /* Allow vertical scrolling if the content is taller than the viewport */
+  transition: background-color 5.0s ease; /* Add a smooth transition effect for background color */
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 2rem; */
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+.nav-icon span{
+  padding: 0 2px;
+  font-size: 1.3rem;
+}
+#mobile {
+  display: none;
+}
+@media(max-width:992px){
+  .nav-icon{
+    position: relative;
+    left: 10rem;
+  }
+  .nav-title span{
+    font-size: 1rem !important;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: -190.6%;
+    transform: translate(-20%);
+    height: auto;
+    width: 400px;
+    background-color: #c2d7f3;
+    padding: 40px 0 0 10px;
+    transition: 1.3s ease-in-out;
+    z-index: 1;
+  }
+  #navbar.active{
+    top: 15%;
+  }
+  #navbar li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: block;
+  }
+  #mobile i {
+    color: green;
+    cursor: pointer;
+    font-size: 24px;
+  }
+ 
+}
+@media(max-width:768px){
+  .nav-icon{
+    position: relative;
+    left: 6rem;
+  }
+  #navbar{
+  transform: translate(-30%);
+  }
+  #navbar li{
+    font-size: 1rem;
+  }
+}
+@media(min-width:576px){
+  .nav-icon{
+    position: relative;
+    left: 2rem;
+  }
+  
+}
+@media(max-width:576px){
+  .nav-icon{
+    display: none;
+  }
+  #navbar{
+    transform: translate(-65%);
+  }
+  #navbar li{
+    font-size: 1rem;
+  }
+}
+
+.nav-icon .facebook{
+  color: blue;
+}
+.nav-icon .twitter{
+  color: blue;
+}
+.nav-icon .linkedin{
+  color: cyan;
+}
+.nav-icon .youtube{
+  color: red;
+}
+.nav-icon .envelope{
+  color: green;
+}
+ 

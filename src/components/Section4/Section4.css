@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sect-4{
+  height: 100%;
+  background-color: rgba(229, 245, 242, 0.685);
+}
+.sect-4-parent1 p{
+  margin: 2rem 0;
+}
+.sect-4-parent1 .box-1{
+  height: auto;
+  width: auto;
+  border: 1px solid gray;
+  margin: 1rem 0;
+  transition: background-color 1.5s ease;
+}
+.sect-4-parent2 img{
+  height: 100vh;
+}
+.circle-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid green;
+  /* background-color: #3498db; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0;
+  border-color: green transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+.arrowEffect {
+  border-color: white transparent transparent transparent;
+}
+.center-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.backgroundEffect {
+  background-color:  rgba(213, 247, 240, 0.842);
+ /* Change the background color as needed */
+}
+
+/* @media(max-width:992px){
+  
+} */

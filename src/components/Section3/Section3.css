@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sect-3{
+  height: 100vh;
+  background-color: rgb(243, 235, 235);
+}
+.sect-3-container .parent1{
+position: relative;
+top: 5rem;
+}
+.sect-3-container .para1{
+  font-size: 2rem;
+  font-weight: 800;
+}
+.sect-3-container .para2{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.sect-3-container .parent2{
+  position: relative;
+  top: 7rem;
+}
+.sect-3-taha{
+  height: 500px;
+}
+.borderEffect{
+  border: 2px solid green;height: 500px; padding: 1rem;
+}
+.borderEffect1{
+  border: 2px solid rgb(211, 236, 211);height: 500px; padding: 1rem;
+}
+.sect-3-taha img{
+  height: 50%;
+  width: 100%;
+}
+.portrait {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img-effect {
+  transition: all 1.5s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.sect-3-taha h2{
+margin-top: 1.2rem;
+}
+@media(min-width:1200px){
+  .sect-3{
+    height: 100vh;
+  }
+}
+@media(max-width:1200px){
+  .sect-3{
+    height: auto;
+  }
+  .sect-3-container .parent1{
+    position: relative;
+    top: 2rem;
+    }
+  .sect-3-container .parent2{
+    position: relative;
+    top: 2rem;
+  }
+}
+@media(max-width:768px){
+  .sect-3{
+    height: auto;
+  }
+  .sect-3-container .parent2{
+    position: relative;
+    top:1rem;
+  }
+  .sect-3-taha{
+    height: 500px;
+    margin: 1rem;
+  }
+}
+@media(max-width:576px){
+  .sect-3-taha p{
+    font-size:1rem ;
+  }
+  .sect-3-taha button{
+    font-size: 0.5rem;
+  }
+}
+
+
+
+
+/* .portrait {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.portrait img {
+  transition: transform 0.5s linear;
+}
+
+.portrait:hover img {
+  transform: scale(1.1);
+}
+<div class="portrait">
+  <img src="http://kenwheeler.github.io/slick/img/fonz1.png">
+</div> */

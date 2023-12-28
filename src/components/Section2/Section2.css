@@ -1,0 +1,106 @@
+.sect-2{
+  background-color: rgb(245, 215, 220);
+  height: 100vh;
+}
+.sect-2-parent{
+  position: relative;
+  top: 10rem;
+}
+#taha{
+  height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#taha img{
+  height: 400px;
+width: auto
+
+}
+
+#ali{
+  height: auto;
+padding: 4rem;
+}
+#ali h1{
+  font-weight: 900;
+}
+#ali p{
+  font-weight: 700;
+}
+#ali a{
+  color: green;
+  font-size: 1.8rem;
+}
+
+@media(max-width:1200px){
+  .sect-2-parent{
+    position: relative;
+    top: 3rem;
+  }
+  #taha{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #taha img{
+    height: 450px;
+  width: 100%;
+ 
+  }
+  #ali{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: auto;
+  padding: 1rem;
+  }
+  .row{
+    padding: 2rem !important;
+  }
+}
+@media(max-width:992px){
+  .sect-2{
+    background-color: rgb(245, 215, 220);
+    height: 100%;
+  }
+  .sect-2-parent{
+    position: relative;
+    top: 2rem;
+  }
+  #taha img{
+    height: 250px; 
+  }
+}
+@media(max-width:768px){
+  .sect-2{
+    background-color: rgb(245, 215, 220);
+    height: auto;
+  }
+  .sect-2-parent{
+    position: relative;
+    top: 2rem;
+  }
+  #taha{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #taha img{
+    height: 250px; 
+  }
+  #ali{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  #ali h1{
+    font-size: 2 !important;
+  }
+  .row{
+    padding: 0.8rem !important;
+  }
+}
